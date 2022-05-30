@@ -1,6 +1,5 @@
 # Data Types
 
-
 # Declare second integer, double, and String variables.
 i2 = 0
 d2 = 0.0
