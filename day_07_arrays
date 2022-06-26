@@ -1,0 +1,23 @@
+# 30_days_of_code
+# day_07: arrays
+
+# For details of this challange, please visit:
+# https://www.hackerrank.com/challenges/30-arrays/problem?isFullScreen=true
+
+# solution
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+if __name__ == '__main__':
+    n = int(input().strip())
+    arr = list(map(int, input().rstrip().split()))
+
+for i in range(n):
+    print(arr[n-1-i],end=' ')
