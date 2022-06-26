@@ -1,0 +1,28 @@
+ 30_days_of_code
+# day_08: dictionaries and maps
+
+# For details of this challange, please visit:
+# https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem
+
+# solution
+
+#!/bin/python3
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+n = int(input())
+phone_book = {}
+
+for i in range(n):
+    names = input().split(' ')
+    phone_book[names[0]] = names[1]
+    
+while True:
+    try:
+        checks = input()
+        if checks in phone_book:
+            print(checks+"="+phone_book[checks])
+        else:
+            print("Not found")
+    except EOFError:
+        break
